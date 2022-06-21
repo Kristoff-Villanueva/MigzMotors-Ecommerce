@@ -35,7 +35,8 @@
     margin-top: 500px;
 }
 
-#s1, #c1 {
+#s1,
+#c1 {
     color: inherit;
 }
 
@@ -277,7 +278,6 @@ i span {
 }
 
 .shakeEffect {
-    border: 2px solid red;
     animation: shake .3s ease-in;
 }
 
@@ -303,10 +303,19 @@ i span {
     }
 }
 
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+    display: none;
+}
 
-.userWrong1{
+.userWrong1 {
     color: #ffffff;
     font-size: 16px;
     position: relative;
-    right: 803px;;
+    right: 803px;
+    ;
+}
+
+.redBorder {
+    border: 2px solid red;
 }
