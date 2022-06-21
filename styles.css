@@ -55,272 +55,6 @@
     text-decoration: none;
     color: white;
 }
-
-
-/* LOGIN STLYES */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.bg-img {
-    background: url('bg2.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg-img:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    text-align: center;
-    padding: 60px 32px;
-    width: 370px;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
-}
-
-.content header {
-    color: white;
-    font-size: 33px;
-    font-weight: 600;
-    margin: 0 0 35px 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.infos {
-    position: relative;
-    height: 45px;
-    width: 100%;
-    display: flex;
-    background: rgba(255, 255, 255, 0.94);
-}
-
-.field span {
-    color: #222;
-    width: 40px;
-    line-height: 45px;
-}
-
-.field input {
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #222;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.space {
-    margin-top: 16px;
-}
-
-.pass {
-    text-align: left;
-    margin: 10px 0;
-}
-
-.pass a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-
-.pass:hover a {
-    text-decoration: underline;
-}
-
-.field input[type="submit"] {
-    background: #808080;
-    border-radius: 40px;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    height: 45px;
-    width: 100%;
-}
-
-.field input[type="submit"]:hover {
-    background: #FFA500;
-}
-
-.login {
-    color: white;
-    margin: 20px 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.links {
-    display: flex;
-    cursor: pointer;
-    color: white;
-    margin: 0 0 20px 0;
-}
-
-.facebook,
-.google {
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    margin-left: 10px;
-    border-radius: 10px;
-}
-
-.facebook {
-    margin-left: 0;
-    background: #4267B2;
-    border: 1px solid #3e61a8;
-}
-
-.google {
-    background: #E1306C;
-    border: 1px solid #df2060;
-}
-
-.facebook:hover {
-    background: #3e61a8;
-}
-
-.google:hover {
-    background: #df2060;
-}
-
-.links i {
-    font-size: 17px;
-}
-
-i span {
-    margin-left: 8px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.signup {
-    font-size: 15px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-
-.signup a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.signup a:hover {
-    text-decoration: underline;
-}
-
-.correct {
-    position: absolute;
-    left: 280px;
-    top: 15px;
-    display: none;
-    color: #06be00;
-    z-index: -1;
-}
-
-.times {
-    position: relative;
-    left: 250px;
-    top: 12px;
-    color: #ff0000;
-    z-index: -1;
-    font-size: 20px;
-}
-
-.times1 {
-    position: relative;
-    left: 250px;
-    top: 13px;
-    color: #ff0000;
-    z-index: -1;
-    font-size: 20px;
-}
-
-#user-wrong {
-    position: relative;
-    right: 60px;
-}
-
-#pass-wrong {
-    position: relative;
-    top: 15px;
-    right: 60px;
-}
-
-#pass-wrong1 {
-    position: relative;
-    top: 15px;
-    right: 60px;
-}
-
-.shakeEffect {
-    animation: shake .3s ease-in;
-}
-
-@keyframes shake {
-    0% {
-        transform: translateX(0)
-    }
-
-    25% {
-        transform: translateX(5px)
-    }
-
-    50% {
-        transform: translateX(-5px)
-    }
-
-    75% {
-        transform: translateX(5px)
-    }
-
-    100% {
-        transform: translateX(0)
-    }
-}
-
-input[type=password]::-ms-reveal,
-input[type=password]::-ms-clear {
-    display: none;
-}
-
-.userWrong1 {
-    color: #ffffff;
-    font-size: 16px;
-    position: relative;
-    right: 803px;
-    ;
-}
-
-.redBorder {
-    border: 2px solid red;
-}
-=======
 /* additional */
 * {
 	margin: 0;
@@ -508,4 +242,39 @@ input[type=password]::-ms-clear {
 	grid-column: span 2;
 	margin-bottom: 10px;
   }
-  
+/* navbar */
+.header_menu{
+  padding: 30px 0 27px;
+  text-align: center;
+
+}
+.header_menu ul li{
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.header_menu ul li a{
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  display: block;
+  padding: 2px 0;
+  position: relative;
+}
+.header_menu ul li a:after{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff7200;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+.header_menu ul li:hover a:after{
+  transform: scale(1);
+}
+.header_menu ul li:last-child{
+  margin-right: 0;
+} 
