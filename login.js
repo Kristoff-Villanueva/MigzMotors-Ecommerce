@@ -24,9 +24,7 @@
       } else {
          if (username.value !== name) {
             userWrong.innerHTML = 'Username does not exist';
-            userWrong.style.color = 'white';
-            userWrong.style.fontSize = '16px';
-            userWrong.style.position = 'relative';
+            userWrong.classList.add('text-deco');
             userWrong.style.right = '67px';
             userField.classList.add('redBorder');
             userField.classList.remove('shakeEffect');
@@ -35,9 +33,7 @@
             times.style.zIndex = 1;
             // If username is incorrect, password is also incorrect
             passWrong.innerHTML = 'Incorrect username!'
-            passWrong.style.color = 'white';
-            passWrong.style.fontSize = '16px';
-            passWrong.style.position = 'relative';
+            passWrong.classList.add('text-deco')
             passWrong.style.right = '85px';
             passField.classList.add('redBorder');
             passField.classList.remove('shakeEffect');
@@ -45,13 +41,13 @@
             passField.classList.add('shakeEffect');
             times1.style.zIndex = 1;
          }
+            // if username is correct but password is incorrect
          if (username.value === name && password.value !== pass) {
             userWrong.innerHTML = '';
             userField.style.border = '2px solid green'
             times.style.zIndex = -1;
             passWrong.innerHTML = 'Wrong password!'
-            passWrong.style.color = 'white';
-            passWrong.style.fontSize = '16px';
+            passWrong.classList.add('text-deco')
             passField.classList.add('redBorder');
             passField.classList.remove('shakeEffect');
             void passField.offsetWidth;
@@ -63,9 +59,7 @@
 
          if (!username.value) {
             userWrong.innerHTML = 'Please enter your username'
-            userWrong.style.color = 'white';
-            userWrong.style.fontSize = '16px';
-            userWrong.style.position = 'relative';
+            userWrong.classList.add('text-deco')
             userWrong.style.right = '56px';
             userField.classList.remove('shakeEffect');
             void userField.offsetWidth;
@@ -74,9 +68,7 @@
 
          if (!password.value) {
             passWrong.innerHTML = 'Please enter your password'
-            passWrong.style.color = 'white';
-            passWrong.style.fontSize = '16px';
-            passWrong.style.position = 'relative';
+            passWrong.classList.add('text-deco')
             passWrong.style.right = '57px';
             passField.classList.add('redBorder');
             passField.classList.remove('shakeEffect');
@@ -90,6 +82,7 @@
       }
    }
 
+   // Remove red border and text after entering new input
    removeBorder = (e) => {
       event.preventDefault();
       userWrong.innerHTML = '';
